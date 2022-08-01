@@ -1,0 +1,48 @@
+@import '../../foundation';
+
+.publication {
+  i {
+    color: #f1b61a;
+  }
+  position: relative;
+  .borderTop {
+    border-top: 5px solid $sec-color;
+    position: absolute;
+    right: 75%;
+    left: 0;
+    top: 0;
+  }
+  color: #1d9798;
+  padding: 20px;
+  button {
+    background-color: #f1b61a;
+    color: #fff;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 2.5rem;
+    text-transform: capitalize;
+    p {
+      padding: 5px;
+    }
+    p:nth-child(2) {
+      font-weight: bolder;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .publication {
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      .card {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

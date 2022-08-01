@@ -1,0 +1,62 @@
+@import '../../foundation';
+
+.bio {
+  .title {
+    text-transform: none;
+  }
+  color: #fff;
+  position: relative;
+  .borderTop {
+    border-top: 5px solid $sec-color;
+    position: absolute;
+    right: 85%;
+    left: 0;
+    top: 0;
+  }
+  padding: 30px 0;
+  background: url(/assets/Images/Bio/Bg.jpg);
+  .stories {
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    gap: 3rem;
+    .story-text {
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: start;
+      background: rgba(169, 169, 169, 0.26);
+      border-radius: 5px;
+      backdrop-filter: blur(1px);
+      position: relative;
+    }
+    .story-text::after,
+    .story-text::before {
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+    }
+
+    .story-text::before {
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid rgba(169, 169, 169, 0.26);
+      top: 100%;
+      left: 9%;
+    }
+    .story-image {
+      display: flex;
+      align-items: center;
+
+      p {
+        text-transform: capitalize;
+
+        margin: auto 20px;
+      }
+    }
+    img {
+      margin-top: 10px;
+      border-radius: 50%;
+      width: 6rem;
+    }
+  }
+}

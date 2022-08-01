@@ -1,0 +1,74 @@
+@import '../../foundation';
+.news {
+  button {
+    background-color: #fff;
+    color: $main-color;
+  }
+  
+  span h1 {
+    font-weight: bolder;
+  }
+  color: #fff;
+  position: relative;
+  background-color: $main-color;
+  display: flex;
+  justify-content: space-between;
+  .borderTop {
+    border-top: 5px solid $sec-color;
+    position: absolute;
+    right: 85%;
+    left: 0;
+  }
+  .cards-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+  }
+  .cardd {
+    width: 35%;
+
+    img {
+      width: 100%;
+    }
+    p,
+    h2 {
+      color: rgb(222, 222, 222);
+      text-transform: uppercase;
+    }
+  }
+}
+.aside {
+  position: relative;
+  height: 100%;
+  h1 {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    line-height: 2rem;
+    span {
+      font-weight: 900;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news {
+    display: flex;
+    flex-direction: column;
+    .cards-body {
+      display: grid;
+      grid-template-columns: 100%;
+      margin: 0 auto;
+    }
+    .cardd {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .aside {
+      width: 100%;
+    }
+  }
+}

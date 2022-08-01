@@ -1,0 +1,54 @@
+@import '../../foundation';
+
+.facilities {
+  i {
+    color: #f1b61a;
+  }
+  .borderTop {
+    border-top: 5px solid $sec-color;
+    position: absolute;
+    right: 75%;
+    left: 0;
+  }
+  color: #fff;
+  width: 100%;
+  background: url(/assets/Images/facilities/BG.jpg);
+  .facilities-body {
+    display: flex;
+    justify-content: space-between;
+    .body-text {
+      button {
+        margin: 3rem auto;
+        color: #fff;
+        background-color: #f1b61a;
+      }
+    }
+    .body-image {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 50%;
+      p {
+        margin: 10px 10px;
+      }
+      img {
+        width: 20rem;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .facilities-body {
+    text-align: center;
+    display: grid;
+    flex-wrap: wrap;
+    .body-image {
+      display: flex;
+      margin: auto 70px;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+}

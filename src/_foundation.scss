@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: rotis-normal;
+}
+@font-face {
+  font-family: rotis-normal;
+  src: url(./assets/Fonts/RotisSansSerifStd.otf);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$main-color: #1d9798;
+$sec-color: #f1b61a;
+$text-color: #fff;
+
+
+/* ==== RESET HTML ==== */
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+ 
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border-radius: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  color: #fff;
+}
+select {
+  color: #1d9798;
+  background-color: transparent;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: large;
+}
+
+.container {
+  width: 100%;
+}
+.title {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title h1 {
+  line-height: 2.1rem;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1040px) {
+  .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+}

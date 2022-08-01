@@ -1,0 +1,49 @@
+@import '../../foundation';
+.research {
+ 
+  padding: 20px;
+  background-color: rgb(243, 243, 243);
+  .title {
+    h1 {
+      color: $main-color;
+    }
+    button {
+      background-color: #f1b61a;
+      color: #fff;
+    }
+  }
+}
+.research-cards {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+
+  .card {
+    height: 25vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .card-text {
+      color: #1d9798;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      padding-left: 10px;
+      p{
+        line-height: 3rem;
+      }
+    }
+  }
+  img {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .research-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
